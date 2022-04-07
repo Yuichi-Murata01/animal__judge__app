@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animalai</title>
+
+    <link rel="stylesheet" href="static/css/reset.css">
+    <link rel="stylesheet" href="static/css/stylesheet.css">
+</head>
+
+<body>
+    <h1>ファイルをアップロードして判定しよう！</h1>
+    <div class="img__warpper">
+        <ul class="img__container">
+            <li><img src="https://gogen-yurai.jp/wp-content/uploads/329184445_675.jpg" alt=""></li>
+            <li><img src="https://gogen-yurai.jp/wp-content/uploads/3549046_675.jpg" alt=""></li>
+            <li><img src="https://www.yomiuri.co.jp/media/2021/07/20210731-OYT1I50040-1.jpg?type=x-large" alt=""></li>
+        </ul>
+    </div>
+    <form method="post" enctype="multipart/form-data">
+        <p><input type="file" name="file">
+            <input type="submit" value="Upload" class="form__upload"></p>
+    </form>
+    <div id="output"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="static/js/ajax.js"></script>
+</body>
+</html>
